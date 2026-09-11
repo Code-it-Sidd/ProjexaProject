@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard - Portal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <nav class="main-nav">
+      <a href="dashboard.html" class="brand-logo">PortalLogo [Admin]</a>
+      <ul class="nav-links">
+        <li><a href="dashboard.html">User View</a></li>
+        <li><a href="admin.html" class="active">Overview</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="card">
+      <h1 class="card-title">Admin Management Panel</h1>
+
+      <!-- Stats overview -->
+      <div class="grid-buttons" style="margin-bottom: 2rem;">
+        <div class="list-item">
+          <div>Total Complaints: <strong>14</strong></div>
+        </div>
+        <div class="list-item">
+          <div>Pending Action: <strong>3</strong></div>
+        </div>
+      </div>
+
+      <!-- Management Table -->
+      <h2 class="section-title">All Resident Tickets</h2>
+      <div style="overflow-x: auto;">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Resident</th>
+              <th>Unit</th>
+              <th>Issue</th>
+              <th>Status</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>#1042</td>
+              <td>Jane Doe</td>
+              <td>Apt 4B</td>
+              <td>Plumbing</td>
+              <td><span class="badge">In Progress</span></td>
+              <td><a href="#" class="btn btn-secondary" style="width:auto; padding:0.2rem 0.5rem; font-size: 0.8rem;">Update</a></td>
+            </tr>
+            <tr>
+              <td>#1041</td>
+              <td>John Smith</td>
+              <td>House 12</td>
+              <td>Electricity</td>
+              <td><span class="badge">Registered</span></td>
+              <td><a href="#" class="btn btn-secondary" style="width:auto; padding:0.2rem 0.5rem; font-size: 0.8rem;">Update</a></td>
+            </tr>
+            <tr>
+              <td>#1039</td>
+              <td>Robert Lee</td>
+              <td>Apt 2A</td>
+              <td>Security</td>
+              <td><span class="badge">Resolved</span></td>
+              <td><a href="#" class="btn btn-secondary" style="width:auto; padding:0.2rem 0.5rem; font-size: 0.8rem;">View</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>

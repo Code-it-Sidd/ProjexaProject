@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Complaints - Portal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <nav class="main-nav">
+      <a href="dashboard.html" class="brand-logo">PortalLogo</a>
+      <ul class="nav-links">
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="new-complaint.html">New Complaint</a></li>
+        <li><a href="complaints.html" class="active">Your Complaints</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="admin.html" class="admin-link">Admin</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="card">
+      <h1 class="card-title">Your complaints</h1>
+
+      <!-- Progress Trackers matching Page 4 sketch -->
+      <h2 class="section-title">Progress</h2>
+      <div class="progress-stepper">
+        <div class="step-item active">
+          <div class="step-indicator">✓</div>
+          <div class="step-title">Registered</div>
+        </div>
+        <div class="step-item active">
+          <div class="step-indicator">2</div>
+          <div class="step-title">In Progress</div>
+        </div>
+        <div class="step-item">
+          <div class="step-indicator">3</div>
+          <div class="step-title">Resolved</div>
+        </div>
+      </div>
+
+      <!-- Current Complaint Details -->
+      <div class="section-block" style="margin-top: 2rem;">
+        <h2 class="section-title">Complaint Details</h2>
+        <div class="list-item">
+          <div>
+            <strong>Issue:</strong> Leaking kitchen pipe (Plumbing)<br>
+            <span style="font-size: 0.85rem; color: #6b7280;">House 4B &bull; Submitted 2 hours ago</span>
+          </div>
+          <span class="badge">In Progress</span>
+        </div>
+      </div>
+
+      <!-- Previous Complaint History -->
+      <div class="section-block">
+        <h2 class="section-title">Previous complaint</h2>
+        <div class="list-item">
+          <div>
+            <strong>Issue:</strong> Hallway Light Replacement (Electricity)<br>
+            <span style="font-size: 0.85rem; color: #6b7280;">House 4B &bull; Closed on 12th Oct</span>
+          </div>
+          <span class="badge">Resolved</span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>
